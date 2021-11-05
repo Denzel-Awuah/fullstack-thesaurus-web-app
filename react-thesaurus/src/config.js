@@ -1,0 +1,1 @@
+export var thesaurusApiUrl = "https://w7ehhd6p2j.execute-api.ca-central-1.amazonaws.com/thesaurus-api-gateway/word";
