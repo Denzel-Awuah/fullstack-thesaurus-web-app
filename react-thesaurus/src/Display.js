@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Display.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import {
   Button,
   notification,
@@ -16,7 +14,6 @@ import UserInputForm from './components/UserInputForm';
 import FavWords from './components/FavWords';
 import Operations from './components/Operations';
 
-
 const Display = (props) => {
 
   // const [value , setValue]  = useState("");
@@ -25,9 +22,6 @@ const Display = (props) => {
   const dispatch = useDispatch();
   const value = useSelector((state) => state.value);
   const words = useSelector((state) => state.allWords);
-
-
-
 
   //Runs when user starts typing a word 
   const handleChange = (event) => {
@@ -44,7 +38,6 @@ const Display = (props) => {
     //setWords([]);
     dispatch(wordActions.updateWords([]));
   }
-
 
   // const openNotification = (data, operation) => {
   //   notification.open({
@@ -239,29 +232,16 @@ const Display = (props) => {
   }
 
 
-
   //--------------------------------------------------------------------------------------------------------------\\  
 
   return (
     <div className="wordprocessor">
-
       <h1 className="title">Welcome to Denzel's Thesaurus App!</h1>
-
-
       <div className="row firstRow">
-      
         <UserInputForm submitEvent={submitEvent} value={value} handleChange={handleChange} />
-       
-        <FavWords enteredWord={value}/>
-       
+        <FavWords enteredWord={value}/> 
       </div>
-
-
-
       <h3><span className="theword">{value}</span></h3>
-
-
-
       <Operations 
        meansLike={meansLike}
        ryhmesWith={ryhmesWith} 
@@ -269,20 +249,10 @@ const Display = (props) => {
        soundsLike={soundsLike} 
        synonyms={synonyms} 
        antonyms={antonyms} />
-
-
-
-
       <h3 className="select" > Select an operation to perform on a word/phrase</h3>
-
-
-
-
       <div className="container ">
-
         <br />
         <br />
-
         <div className="allWords">
           <Card title="Operation Results" bordered={true} style={{ width: 900, backgroundColor: "#a1d9a9be" }}>
             {words.map((word) => (
@@ -293,15 +263,7 @@ const Display = (props) => {
             ))}
           </Card>
         </div>
-
-
       </div>
-
-
-
-
-
-
     </div>
   );
 }
