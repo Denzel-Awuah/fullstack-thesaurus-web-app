@@ -1,6 +1,6 @@
 # fullstack-aws-lambda
 
-Created Full-Stack Thesaurus Application to perform operations on entered words/phrases 
+Created Full-Stack Thesaurus Application to perform operations on entered words and phrases 
 
 - Create Frontend using React JS & Redux toolkit, Deployed Frontend App to AWS Amplify 
 - Created Backend using a Spring Cloud function. Clients send requests to an AWS API Gateway, which forwards the request to the AWS lambda where the Spring Cloud function is deployed.
