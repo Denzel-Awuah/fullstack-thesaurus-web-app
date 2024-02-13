@@ -204,9 +204,6 @@ const Display = (props) => {
   }
 
   const checkWords = (data, operation) => {
-
-
-
     if (data.length === 0 && value === "") {
       //alert("You must enter a word before performing an operation !")
       openNotificationWithIconNullError('error' , operation, data);
@@ -219,9 +216,6 @@ const Display = (props) => {
       //openNotification(data, operation);
       openNotificationWithIcon('success' , operation, data);
     }
-
-
-
   }
 
 
