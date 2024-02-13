@@ -209,11 +209,11 @@ const Display = (props) => {
       openNotificationWithIconNullError('error' , operation, data);
 
     }
+    //openNotification(data, operation);
     else if (data.length === 0) {
       openNotificationWithIcon('warning' , operation, data);
     }
     else {
-      //openNotification(data, operation);
       openNotificationWithIcon('success' , operation, data);
     }
   }
