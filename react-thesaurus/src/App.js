@@ -81,10 +81,10 @@ function App() {
       alert("You must enter a word first!");
     }
     else {
-      fetch("https://api.datamuse.com//words?ml=" + value)
+      fetch("https://api.datamuse.com/words?ml=" + value)
         .then(res => res.json())
         .then(data => {
-          // console.log(data)
+          console.log(data)
           clearWords();
           //setWords(data);
           dispatch(wordActions.updateWords(data));
@@ -107,6 +107,7 @@ function App() {
       fetch("https://api.datamuse.com	/words?rel_rhy=" + value)
         .then(res => res.json())
         .then(data => {
+          console.log(data);
           clearWords();
           // setWords(data); 
           dispatch(wordActions.updateWords(data));
