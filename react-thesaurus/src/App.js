@@ -26,7 +26,7 @@ function App() {
   //Runs when user starts typing a word 
   const handleChange = (event) => {
     dispatch(wordActions.updateValue(event.target.value));
-  }
+  } 
 
 
   const submitEvent = (event) => {
