@@ -68,8 +68,6 @@ function App() {
   };
 
 
-
-
   //----Operation Buttons-----\\
 
   //Handles Means like button
@@ -227,7 +225,6 @@ function App() {
   }
 
 
-  //--------------------------------------------------------------------------------------------------------------\\
   return (
     <div className="App">
         <div className="wordprocessor">
