@@ -8,3 +8,9 @@ Created Full-Stack Thesaurus Application to perform operations on entered words 
 
 ## App Preview 
 ![Application](./react-thesaurus/public/v2/thesaurus.png)
+
+
+<br>
+
+## Deployment Strategy
+![Application](./fullstack-deployment.drawio.png)
