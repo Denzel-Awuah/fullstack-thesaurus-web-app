@@ -18,13 +18,9 @@ public class Request {
 		this.favouriteWord = favouriteWord;
 	}
 
-	
-
-
 	public List<FavouriteWord> getFavouriteWord() {
 		return favouriteWord;
 	}
-
 
 	public void setFavouriteWord(List<FavouriteWord> favouriteWord) {
 		this.favouriteWord = favouriteWord;
