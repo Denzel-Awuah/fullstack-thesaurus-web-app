@@ -31,7 +31,4 @@ public class Request {
 		return "Request [favouriteWord=" + favouriteWord + "]";
 	}
 
-
-
-
 }
