@@ -17,6 +17,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 
+
 public class ServiceHandler implements RequestHandler<FavouriteWord, Response> {
 
 	// JSON Parser
@@ -24,7 +25,6 @@ public class ServiceHandler implements RequestHandler<FavouriteWord, Response> {
 
 	// @Autowired
 	// private FavouriteWordsRepository repository;
-
 	@Override
 	public Response handleRequest(FavouriteWord request, Context context) {
 
@@ -32,13 +32,11 @@ public class ServiceHandler implements RequestHandler<FavouriteWord, Response> {
 		AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
 		DynamoDBMapper mapper = new DynamoDBMapper(client);
 	
-	
 		Response theResponse = new Response();
 		
 		// Logging
 		LambdaLogger logger = context.getLogger();
 
-		
 		// Handling the Request
 		switch (request.getHttpMethod()) {
 
