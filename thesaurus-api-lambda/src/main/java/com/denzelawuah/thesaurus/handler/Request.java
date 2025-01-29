@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.denzelawuah.thesaurus.favouriteWords.FavouriteWord;
 
+
+// Request Class: Handles function traffic
 public class Request {
 
 
